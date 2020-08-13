@@ -16,6 +16,13 @@
 
 // Code here
 
+function CarFactory(make, model){
+  this.make = make
+  this.model = model
+
+
+}
+
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -34,6 +41,7 @@ function Employee(name, email, hireDate) {
   */
   
   // Code here
+  const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
   
   ////////// PROBLEM 3 //////////
   
@@ -57,6 +65,22 @@ function Employee(name, email, hireDate) {
   */
   
   // Code here
+
+  function Car(make, model, year){
+    this.make = make
+    this.model = model
+    this.year = year
+
+    this.moveCar = function(){
+      this.move = 0
+      console.log(this.move)
+      return this.move
+    
+
+  }
+
+  
+  
   
   ////////// PROBLEM 4 //////////
   
@@ -73,9 +97,22 @@ function Employee(name, email, hireDate) {
     this.name = name;
     this.genre = genre;
     this.rating = rating;
+    
   }
   
   // Code here
+  
+    let ave1 = num + this.rating
+    let ave2 = ave1 / 2
+
+    let changeRating = new movie('movie', 'action', ave1)
+    
+    
+
+
+  
+
+
   
   ////////// PROBLEM 5 //////////
   
@@ -98,4 +135,4 @@ function Employee(name, email, hireDate) {
   // Write a prototype method for the User constructor function named changePostRating that will take in two number parameters. The first will be an id (a number) and the second will be the new rating (a number). Use the id to find the matching object in the savedPosts array. Once you find the matching object, update it's rating score with the new rating parameter.
   
   // Code here
-  
+  }
